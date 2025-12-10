@@ -1,0 +1,11 @@
+<ul class="user-list">
+    <li *ngFor="let user of users" class="user-item">
+      {{ user.username }} - Role: {{ user.role }}
+      <select [(ngModel)]="user.role" (change)="updateRole(user._id, user.role)" class="role-select">
+        <option>Admin</option>
+        <option>Editor</option>
+        <option>Writer</option>
+        <option>Reader</option>
+      </select>
+    </li>
+</ul>

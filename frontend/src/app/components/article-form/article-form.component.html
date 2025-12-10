@@ -1,0 +1,7 @@
+<form (ngSubmit)="save()" class="article-form">
+    <input [(ngModel)]="article.title" placeholder="Title" name="title" required class="input-field">
+    <textarea [(ngModel)]="article.content" placeholder="Content" name="content" required class="textarea-field"></textarea>
+    <input [(ngModel)]="article.image" placeholder="Image URL" type="file" name="image" class="input-field">
+    <input [(ngModel)]="article.tags" placeholder="Tags (comma separated)" name="tags" class="input-field">
+    <button type="submit" class="submit-btn">Save</button>
+</form>

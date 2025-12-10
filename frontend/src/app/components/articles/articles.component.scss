@@ -1,0 +1,60 @@
+.article-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  
+  .article-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .action-btn {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .view-btn {
+    background-color: #28a745;
+    color: white;
+  
+    &:hover { background-color: #218838; }
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: black;
+  
+    &:hover { background-color: #e0a800; }
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  
+    &:hover { background-color: #c82333; }
+  }
+  
+  .new-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    &:hover { background-color: #0056b3; }
+  }

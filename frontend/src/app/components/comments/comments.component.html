@@ -1,0 +1,10 @@
+<ul class="comment-list">
+    <li *ngFor="let comment of comments" class="comment-item">
+        {{ comment.content }} by {{ comment.author.username }}
+    </li>
+</ul>
+<form (ngSubmit)="addComment()" class="comment-form">
+    <textarea [(ngModel)]="newComment" name="newComment" placeholder="Add a comment..." required
+        class="comment-textarea"></textarea>
+    <button type="submit" class="submit-btn">Add Comment</button>
+</form>

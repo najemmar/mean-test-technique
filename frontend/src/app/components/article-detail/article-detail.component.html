@@ -1,0 +1,8 @@
+<div *ngIf="article" class="article-detail">
+    <h2>{{ article.title }}</h2>
+    <p>By {{ article.author.username }}</p>
+    <img *ngIf="article.image" [src]="article.image" alt="Article Image" class="article-image">
+    <div class="content">{{ article.content }}</div>
+    <div class="tags">Tags: {{ article.tags.join(', ') }}</div>
+    <app-comments [articleId]="article._id"></app-comments>
+</div>

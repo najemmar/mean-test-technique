@@ -1,0 +1,9 @@
+<ul class="article-list">
+    <li *ngFor="let article of articles" class="article-item">
+        {{ article.title }} by {{ article.author.username }}
+        <button (click)="view(article._id)" class="action-btn view-btn">View</button>
+        <button *ngIf="authService.hasRole(['Admin', 'Editor'])" (click)="edit(article._id)" class="action-btn edit-btn">Edit</button>
+        <button *ngIf="authService.isAdmin()" (click)="delete(article._id)" class="action-btn delete-btn">Delete</button>
+    </li>
+</ul>
+<button *ngIf="authService.hasRole(['Admin', 'Writer'])" routerLink="/new-articles" class="new-btn">New Article</button>
