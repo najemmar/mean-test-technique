@@ -19,8 +19,8 @@ blog-mean-technique/
 
 ```bash
 # 1. Cloner le projet
-git clone https://github.com/TON_PSEUDO/blog-mean-technique.git
-cd blog-mean-technique
+git clone https://github.com/najemmar/mean-test-technique.git
+cd mean-test-technique
 
 # 2. Backend
 cd backend
@@ -34,10 +34,9 @@ npm install
 ng serve
 
 Variables d’environnement (backend/.env)
-MONGO_URI=mongodb+srv://admin:tonmotdepasse@cluster0.xxxx.mongodb.net/test
-# ou local : mongodb://localhost:27017/test
-JWT_SECRET=monjolisecret123456
-JWT_REFRESH_SECRET=refreshsecret987654
+MONGO_URI=mongodb://localhost:27017/test
+JWT_SECRET=supersecretkey1234567890abcdef1234567890
+JWT_REFRESH_SECRET=refreshsupersecret987654321zyxwvuts
 
 URLs
 
@@ -54,13 +53,13 @@ Commentaires imbriqués + notifications en temps réel (Socket.io)
 Rate limiting + bcrypt + validation + CORS
 Tests unitaires sur les permissions
 
-### Étape 6 : Dernières commandes pour tout lancer
+Dernières commandes pour tout lancer
 
 Terminal 1 (backend) :
 ```bash
 cd backend
 npm install
-npm start
+nodemon
 Terminal 2 (frontend) :
 cd frontend
 npm install
